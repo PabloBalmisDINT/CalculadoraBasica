@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalculadoraBasica"
         mc:Ignorable="d"
-        Title="Calculadora Basica" Height="230.343" Width="531.662">
+        Title="Calculadora Basica" Height="230.343" Width="531.662" Icon="32.ico">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="32,26,0,0" TextWrapping="Wrap" Text="Operando 1" VerticalAlignment="Top"/>
         <TextBox x:Name="operando1" HorizontalAlignment="Left" Height="23" Margin="135,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
