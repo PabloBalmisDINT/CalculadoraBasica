@@ -8,15 +8,15 @@
         Title="Calculadora Basica" Height="230.343" Width="531.662" Icon="32.ico">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="32,26,0,0" TextWrapping="Wrap" Text="Operando 1" VerticalAlignment="Top"/>
-        <TextBox x:Name="operando1" HorizontalAlignment="Left" Height="23" Margin="135,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Operando1TextBox" HorizontalAlignment="Left" Height="23" Margin="135,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="32,71,0,0" TextWrapping="Wrap" Text="Operando 2" VerticalAlignment="Top"/>
-        <TextBox x:Name="operando2" HorizontalAlignment="Left" Height="23" Margin="135,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Operando2TextBox" HorizontalAlignment="Left" Height="23" Margin="135,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="32,112,0,0" TextWrapping="Wrap" Text="Operador" VerticalAlignment="Top"/>
-        <TextBox x:Name="operador" HorizontalAlignment="Left" Height="23" Margin="135,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="operadorTextChanged"/>
+        <TextBox x:Name="OperadorTextBox" HorizontalAlignment="Left" Height="23" Margin="135,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="operadorTextChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="32,158,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top"/>
-        <TextBox IsReadOnly="True" x:Name="resultado" HorizontalAlignment="Left" Height="23" Margin="135,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="calcular" Content="Calcular" HorizontalAlignment="Left" Margin="429,27,0,0" VerticalAlignment="Top" Width="75" Click="CalcularButtonClick" IsDefault="True" IsEnabled="False"/>
-        <Button x:Name="limipiar" Content="Limpiar" HorizontalAlignment="Left" Margin="429,79,0,0" VerticalAlignment="Top" Width="75" Click="LimpiarButtonClick" IsCancel="True"/>
+        <TextBox IsReadOnly="True" x:Name="ResultadoTextBox" HorizontalAlignment="Left" Height="23" Margin="135,158,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="CalcularButton" Content="Calcular" HorizontalAlignment="Left" Margin="429,27,0,0" VerticalAlignment="Top" Width="75" Click="CalcularButtonClick" IsDefault="True" IsEnabled="False"/>
+        <Button x:Name="LimipiarButton" Content="Limpiar" HorizontalAlignment="Left" Margin="429,79,0,0" VerticalAlignment="Top" Width="75" Click="LimpiarButtonClick" IsCancel="True"/>
 
     </Grid>
 </Window>

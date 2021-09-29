@@ -27,40 +27,40 @@ namespace CalculadoraBasica
 
         private void CalcularButtonClick(object sender, RoutedEventArgs e)
         {
-            int res = default;
+            int resultado = default;
             try
             {
-                switch (operador.Text)
+                switch (OperadorTextBox.Text)
                 {
                     case "+":
                         {
-                            res = int.Parse(operando1.Text) + int.Parse(operando2.Text);
+                            resultado = int.Parse(Operando1TextBox.Text) + int.Parse(Operando2TextBox.Text);
                             break;
                         }
                     case "-":
                         {
-                            res = int.Parse(operando1.Text) - int.Parse(operando2.Text);
+                            resultado = int.Parse(Operando1TextBox.Text) - int.Parse(Operando2TextBox.Text);
                             break;
                         }
                     case "*":
                         {
-                            res = int.Parse(operando1.Text) * int.Parse(operando2.Text);
+                            resultado = int.Parse(Operando1TextBox.Text) * int.Parse(Operando2TextBox.Text);
                             break;
                         }
                     case "/":
                         {
-                            res = int.Parse(operando1.Text) / int.Parse(operando2.Text);
+                            resultado = int.Parse(Operando1TextBox.Text) / int.Parse(Operando2TextBox.Text);
 
 
                             break;
                         }
                 }
-                resultado.Text = res.ToString();
+                ResultadoTextBox.Text = resultado.ToString();
             }
             catch(DivideByZeroException)
             {
                 MessageBox.Show("No se puede dividir por cero");
-                resultado.Text = "NaN";
+                ResultadoTextBox.Text = "NaN";
             }
             catch(FormatException)
             {
@@ -72,21 +72,21 @@ namespace CalculadoraBasica
 
         private void LimpiarButtonClick(object sender, RoutedEventArgs e)
         {
-            operando1.Text = "";
-            operando2.Text = "";
-            operador.Text = "";
-            resultado.Text = "";
+            Operando1TextBox.Text = "";
+            Operando2TextBox.Text = "";
+            OperadorTextBox.Text = "";
+            ResultadoTextBox.Text = "";
         }
 
         private void operadorTextChanged(object sender, TextChangedEventArgs args)
         {
-            if (operador.Text == "+" || operador.Text == "-" || operador.Text == "*" || operador.Text == "/")
+            if (OperadorTextBox.Text == "+" || OperadorTextBox.Text == "-" || OperadorTextBox.Text == "*" || OperadorTextBox.Text == "/")
             {
-                calcular.IsEnabled = true;
+                CalcularButton.IsEnabled = true;
             }
             else
             {
-                calcular.IsEnabled = false;
+                CalcularButton.IsEnabled = false;
             }
         }
     }
